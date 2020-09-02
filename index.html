@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Kriptovalute</title>
+	</head>
+	
+	<body>
+		<h1>Kriptovalute</h1>
+		<form>
+			<label for="fname">Broj dana:</label><br>
+			<input type="number" id="chartForm"><br>
+			<label for="currency">Izaberite kriptovalutu:</label><br>
+			<select id="currency" name="currency" size="3">
+				<option value="BTC" label="Bitcoin">Bitcoin</option>
+				<option value="ETH">Etherum</option>
+				<option value="BCH">Bitcoin Cash</option>
+			</select> 
+		</form>
+		<button type="submit" onclick="UserAction()">Unesi</button>
+		<div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
+	</body>
+	<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+	<script src="script.js"></script>
+</html>
